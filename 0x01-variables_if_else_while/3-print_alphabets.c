@@ -13,7 +13,7 @@ int main(void)
 		putchar(n);
 		n++;
 	}
-		while (N < 'Y')
+		while (N <= 'Z')
 	{
 		putchar(N);
 		N++;
