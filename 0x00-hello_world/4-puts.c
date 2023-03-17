@@ -1,10 +1,7 @@
 #include <stdio.h>
-
-/* 
-program that prints exactly with proper grammar, but the outcome is a piece of art */
-
+/* main that prints exactly "Programming is like building a multilingual puzzle  */
 int main(void)
 {
-   puts ("Programming is like building a multilingual puzzle\n");
-	return 0;
+	puts("\"Programming is like building a multilingual puzzle\n");
+	return (0);
 }
