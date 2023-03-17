@@ -1,5 +1,11 @@
 #include <stdio.h>
-/* main that prints exactly "Programming is like building a multilingual puzzle  */
+
+/*
+ *Description: main  Print exactly
+ *"Programming is like building a multilingual puzzle
+ *Return: 0
+ */
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
