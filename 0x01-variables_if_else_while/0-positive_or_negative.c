@@ -2,14 +2,15 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main detect if the number n is negative or positive
+ * main detect if the number 
+ *                n is negative or positive
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int n;
-	srand(time(0));
+	srand (time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n == 0)
 	{
