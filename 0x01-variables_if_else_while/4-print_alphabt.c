@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - print the alphabet
+ * main - print alphabet
  *
- * discription : print the alphabet exept q and e
+ * Description: print the alphabet exept q and e
  *
- * return : Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
