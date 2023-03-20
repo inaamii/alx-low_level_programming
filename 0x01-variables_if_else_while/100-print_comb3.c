@@ -9,24 +9,24 @@
  */
 int main(void)
 {
-	int i = 48;
-	int j;
+	int N1 = 48;
+	int N2;
 
-	while (i < 57)
+	while (N1 < 57)
 	{
-		j = i + 1;
-		while (j < 58)
+		N2 = N1 + 1;
+		while (N2 < 58)
 		{
-			putchar(i);
-			putchar(j);
-			if (i < 56 || j < 57)
+			putchar(N1);
+			putchar(N2);
+			if (N1 < 56 || N2 < 57)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-		j++;
+		N2++;
 		}
-	i++;
+	N1++;
 	}
 	putchar('\n');
 	return (0);
