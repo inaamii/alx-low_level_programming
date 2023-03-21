@@ -24,7 +24,7 @@ int main(void)
 				putchar(N1);
 				putchar(N2);
 				putchar(N3);
-				if (N1 < 56 || N2 < 57 || N3 < 55)
+				if (N1 < 55 || N2 < 56 || N3 < 57)
 				{
 					putchar(',');
 					putchar(' ');
