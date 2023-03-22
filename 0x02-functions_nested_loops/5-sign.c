@@ -5,8 +5,10 @@
  *
  * @n : n is number
  *
- * Return : return 1 is greater than zero , -1 is less than zero
- */
+ * Return: return 1 is greater than
+ * zero -1 is less than zero and 0 is zero
+ *
+*/
 
 int print_sign(int n)
 {
