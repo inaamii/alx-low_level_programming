@@ -13,7 +13,7 @@ int main(void)
 	long int f2 = 1;
 	long int add;
 
-	for (i = 0; i <= 50; i++)
+	for (i = 0; i < 49; i++)
 	{
 		add = f1 + f2;
 		printf("%li, ", add);
