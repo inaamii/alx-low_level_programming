@@ -1,12 +1,15 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - a program that print number 1 to 100
+ * main - The Fizz-Buzz test
+ *
+ * Description  - a program that print number 1 to 100
  * for multiples of three print Fizz
  * ............................ buzz
  * ............. of both three and five print FizzBuzz
  *
- * Return : 0 Always (seccess)
+ * Return:  Always 0 (success)
+ *
  */
 
 int main(void)
