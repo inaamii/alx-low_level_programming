@@ -12,7 +12,7 @@ void print_diagonal(int n)
 	int i = 0;
 	int spc;
 
-	while (i <= n && n > 0)
+	while (i < n && n > 0)
 	{
 		for (spc = 0; spc < i; spc++)
 		{
