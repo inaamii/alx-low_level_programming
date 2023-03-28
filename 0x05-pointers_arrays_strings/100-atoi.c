@@ -3,6 +3,9 @@
 /**
  * _atoi - a function that convert a string an integer
  *
+ * Description : The number in the string can be
+ * preceded by an infinite number of characters
+ *
  * @s : pointer
  *
  * Return : the int converted
@@ -27,10 +30,9 @@ int _atoi(char *s)
 				n = ((s[i] - '0') * sign) + (n * 10);
 				i++;
 			}
-			break;	
+			break;
 		}
 	i++;
 	}
-
 	return (n);
 }
