@@ -27,7 +27,7 @@ int _atoi(char *s)
 				n = ((s[i] - '0') * sign) + (n * 10);
 				i++;
 			}
-	
+			break;	
 		}
 	i++;
 	}
