@@ -8,7 +8,7 @@
  *
  * @s : pointer
  *
- * Return : the int converted
+ * Return : the n converted to int
  */
 
 int _atoi(char *s)
