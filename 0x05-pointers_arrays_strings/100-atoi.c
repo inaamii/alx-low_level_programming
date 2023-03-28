@@ -3,7 +3,7 @@
 /**
  * _atoi - a function that convert a string an integer
  *
- * Description : The number in the string can be
+ * Description: The number in the string can be
  * preceded by an infinite number of characters
  *
  * @s : pointer
