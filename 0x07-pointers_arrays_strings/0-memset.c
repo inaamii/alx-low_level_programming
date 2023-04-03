@@ -5,7 +5,9 @@
  *
  * @n : first byte of memory
  * @s : pointer
- * @c : the constant byte
+ * @b : the constant byte
+ *
+ * Return: return s
  */
 
 char *_memset(char *s, char b, unsigned int n)
