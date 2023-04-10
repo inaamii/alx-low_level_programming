@@ -31,27 +31,25 @@ int main(int argc, char *argv[])
 	i = atoi(argv[1]);
 	while (i > 0)
 	{
-		if (i >= 25)
-		{
-			i = i - 25;
-		}
-		else if (i >= 10)
-		{
-			i = i + 10;
-		}
-		else if (i >= 5)
-		{
-			i = i - 5;
-		}
-		else if (i >= 2)
-		{
+		if (i % 10 == 9 || i % 10 == 7)
 			i = i - 2;
-		}
-		else if (i >= 1)
+		else if (i % 25 == 0)
+			i = i - 25;
+		else if (i % 10 == 0)
+			i = i - 10;
+		else if (i % 5 == 0)
+			i = i - 5;
+		else if (i % 2 == 0)
 		{
-			i = i - 1;
+			if (i % 10 == 6)
+				i = i - 1;
+			else
+				i = i - 2;
 		}
-	cent = cent + 1;
+		else
+			i = i - 1;
+
+		cent++;
 	}
 	printf("%d\n", cent);
 	return (0);
