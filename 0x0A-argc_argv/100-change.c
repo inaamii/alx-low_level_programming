@@ -16,41 +16,35 @@
 int main(int argc, char *argv[])
 {
 
-	int i;
-	int cent = 0;
+	int i, j;
+	int rest = 0;
+	int c[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	else if (atoi(argv[1]) < 0)
+
+	i = atoi(argv[1]);
+
+	if (i < 0)
 	{
 		printf("0\n");
+		return (0);
 	}
-	i = atoi(argv[1]);
-	while (i > 0)
-	{
-		if (i % 10 == 9 || i % 10 == 7)
-			i = i - 2;
-		else if (i % 25 == 0)
-			i = i - 25;
-		else if (i % 10 == 0)
-			i = i - 10;
-		else if (i % 5 == 0)
-			i = i - 5;
-		else if (i % 2 == 0)
-		{
-			if (i % 10 == 6)
-				i = i - 1;
-			else
-				i = i - 2;
-		}
-		else
-			i = i - 1;
 
-		cent++;
+	j = 0;
+	while (j < 5 && i >= 0)
+	{
+		while (i >= c[j])
+		{
+			rest++;
+			i = i - c[j];
+		}
+	j++;
 	}
-	printf("%d\n", cent);
+
+	printf("%d\n", rest);
 	return (0);
 }
