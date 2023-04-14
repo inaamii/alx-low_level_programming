@@ -20,7 +20,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	tab = malloc(((max - min) + 1) * sizeof(int));
+	tab = malloc((max - min + 1) * sizeof(int));
 
 	if (tab == NULL)
 	{
