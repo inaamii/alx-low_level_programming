@@ -1,5 +1,6 @@
 #include "3-calc.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - calculator
@@ -18,7 +19,7 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(1);
+		exit(100);
 	}
 
 	cal = get_op_func(argv[2]);
@@ -26,7 +27,7 @@ int main(int argc, char *argv[])
 	if (cal == NULL)
 	{
 		printf("Error\n");
-		exit(1);
+		exit(100);
 	}
 
 	printf("%d\n", cal(atoi(argv[1]), atoi(argv[3])));
