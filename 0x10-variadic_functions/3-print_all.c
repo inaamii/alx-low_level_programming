@@ -69,6 +69,9 @@ void print_string(va_list arg)
 
 void print_all(const char * const format, ...)
 {
+
+	va_list arg;
+
 	int i, j;
 	char *string = "";
 	char *separator = ", ";
@@ -79,10 +82,9 @@ void print_all(const char * const format, ...)
 		{'f', print_f},
 		{'s', print_string}
 	};
-	va_list arg;
 
 	va_start(arg, format);
-
+	
 	i = 0;
 	while (format != NULL && format[i] != '\0')
 	{
