@@ -89,7 +89,8 @@ void print_all(const char * const format, ...)
 	i = 0;
 	while (format != NULL && format[i] != '\0')
 	{
-		for (j = 0; df[j].dt != '\0'; j++)
+		j = 0;
+		while (df[j].dt != '\0')
 		{
 			if (df[j].dt == format[i])
 			{
@@ -97,6 +98,7 @@ void print_all(const char * const format, ...)
 				df[j].f(arg);
 				string = separator;
 			}
+		j++;
 		}
 	i++;
 	}
