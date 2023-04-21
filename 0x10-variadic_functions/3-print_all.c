@@ -70,11 +70,8 @@ void print_string(va_list arg)
 void print_all(const char * const format, ...)
 {
 
-	va_list arg;
-
 	int i, j;
-	char *string = "";
-	char *separator = ", ";
+	char *separator = "";
 
 	dt_func df[] = {
 		{'c', print_c},
@@ -83,8 +80,11 @@ void print_all(const char * const format, ...)
 		{'s', print_string}
 	};
 
+
+	va_list arg;
+
 	va_start(arg, format);
-	
+
 	i = 0;
 	while (format != NULL && format[i] != '\0')
 	{
@@ -93,9 +93,9 @@ void print_all(const char * const format, ...)
 		{
 			if (df[j].dt == format[i])
 			{
-				printf("%s", string);
+				printf("%s", separator);
 				df[j].f(arg);
-				string = separator;
+				separator = ", ";
 			}
 		j++;
 		}
