@@ -10,11 +10,11 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t NBR;
+	size_t NBR = 0;
 
-	for (NBR = 0; h != NULL; NBR++)
+	while (h != NULL)
 	{
-
+		NBR++;
 		if (h->str == NULL)
 			printf("[0] (nil)\n");
 		else
