@@ -10,9 +10,9 @@
 
 void free_list(list_t *head)
 {
-	list_t swp;
+	list_t *swp;
 
-	while (head != '\0')
+	while (head)
 	{
 		swp = head->next;
 		free(head->str);
