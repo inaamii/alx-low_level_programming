@@ -3,8 +3,7 @@
 main:
 	mov	edi, message
 	xor	eax, eax
-
-	mov	eax, 0
 	call	printf
+	mov	eax, 0
 	ret
-message: db `Hello, holberton\n`, 0xa,0
+message: db `Hello, Holberton\n`,0
