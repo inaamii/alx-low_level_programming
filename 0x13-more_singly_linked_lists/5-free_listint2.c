@@ -17,9 +17,10 @@ void free_listint2(listint_t **head)
 		return;
 	}
 
+
 	while (*head != NULL)
 	{
-		swp = swp->next;
+		swp = (*head)->next;
 		free(*head);
 
 		*head = swp;
